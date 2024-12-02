@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My E-Commerce Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            padding: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+        .main-content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .product-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product-price {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .cart-icon {
+            background-color: #f8f9fa;
+            padding: 10px 15px;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My E-Commerce Store</h1>
+        <p>Your one-stop shop for amazing products!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content (Product Listings) -->
+    <div class="main-content" id="shop">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250" alt="Product 1">
+            <div class="product-title">Product 1</div>
+            <div class="product-price">$20.99</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250" alt="Product 2">
+            <div class="product-title">Product 2</div>
+            <div class="product-price">$34.99</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250" alt="Product 3">
+            <div class="product-title">Product 3</div>
+            <div class="product-price">$15.49</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250" alt="Product 4">
+            <div class="product-title">Product 4</div>
+            <div class="product-price">$49.99</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Floating Cart Icon -->
+    <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My E-Commerce Store. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional: Include FontAwesome icons for cart -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
+
